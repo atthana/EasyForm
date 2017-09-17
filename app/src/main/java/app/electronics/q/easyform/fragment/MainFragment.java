@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.annotation.IdRes;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -171,6 +172,7 @@ public class MainFragment extends Fragment{
                 nameStrings[i] = cursor.getString(1);
                 genderStrings[i] = cursor.getString(2);
                 provinceStrings[i] = cursor.getString(3);
+                Log.d("17sepV1", "Name[" + i + "] ==>" + nameStrings[i]);
                 cursor.moveToNext();
 
             }
